@@ -3,6 +3,7 @@ var gapSize = 3; // This determines the size of the gap to create between the fl
 
 class Barrier extends GameObject {
 	constructor() {
+
 		super();
 	}
 

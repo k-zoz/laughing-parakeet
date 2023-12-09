@@ -72,6 +72,7 @@ class Player extends GameObject {
 
 	onPlayerFlight() {
 		this.velocity.y += flightForce;
+
 	}
 
 	capVelocity(cap) {
