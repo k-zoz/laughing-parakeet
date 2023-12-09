@@ -4,10 +4,12 @@ var currentGameObjects = []; // collection of all game objects in the scene
 
 var createObject = function (gameObject) {
 	newGameObjects.push(gameObject);
+
 };
 
 var destroyObject = function (gameObject) {
 	gameObject.destroyed = true;
+
 };
 
 var destroyMatchingObjects = function (predicate) {
@@ -16,6 +18,7 @@ var destroyMatchingObjects = function (predicate) {
 			destroyObject(gameObject);
 		}
 	});
+
 };
 
 var testMatchingObjects = function (objectMatch, predicate) {
@@ -28,9 +31,11 @@ var testMatchingObjects = function (objectMatch, predicate) {
 		}
 	});
 	return result;
+
 };
 
 var updateGameState = function () {
+
 	// Delta Time is used to track how much time has passed since the last update
 	// We use this instead of a fixed value to account for changes in frame rate (lag)
 	// This means the game will play similarly at different frame rates.
